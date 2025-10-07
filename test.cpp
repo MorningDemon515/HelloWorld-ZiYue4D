@@ -1,4 +1,5 @@
 #include <iostream>
+#include <windows.h>
 
 #ifdef __cplusplus
 extern "C" {  
@@ -6,7 +7,9 @@ extern "C" {
 
 void helloworld()
 {
-       std::cout<<"Hello, World!"<<std::endl;
+    //std::cout<<"Hello, World!"<<std::endl;
+	//system("pause");
+    MessageBoxA(NULL, "Hello, World!", "Hello, World!", MB_OK);	
 }
 
 #ifdef __cplusplus
