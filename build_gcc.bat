@@ -1,0 +1,1 @@
+clang main.ll stdlib.bc HelloWorld.a -o main.exe -luser32
